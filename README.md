@@ -36,6 +36,7 @@ Add the WebmilLanguageDetectBundle to your application kernel:
 Configuration
 -------------
 Add in your config.yml file:
+
     // app/config/config.yml
     webmil_language_detect:
         omit_languages:       # Omits languages. If you're only expecting a limited set of languages, this can greatly
