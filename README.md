@@ -13,25 +13,29 @@ Add text-language-detect and WebmilLanguageDetectBundle to your vendors:
 
 Add both to your autoload:
 
-    // app/autoload.php
-    $loader->registerNamespaces(array(
-        // ...
-        'Webmil'               => __DIR__.'/../vendor/bundles',
-        'TextLanguageDetect'   => __DIR__.'/../vendor/text-language-detect/lib',
-        // ...
-    ));
+``` php
+// app/autoload.php
+$loader->registerNamespaces(array(
+    // ...
+    'Webmil'               => __DIR__.'/../vendor/bundles',
+    'TextLanguageDetect'   => __DIR__.'/../vendor/text-language-detect/lib',
+    // ...
+));
+```
 
 Add the WebmilLanguageDetectBundle to your application kernel:
 
-    // app/AppKernel.php
-    public function registerBundles()
-    {
-        return array(
-            // ...
-            new Webmil\LanguageDetectBundle\WebmilLanguageDetectBundle(),
-            // ...
-        );
-    }
+``` php
+// app/AppKernel.php
+public function registerBundles()
+{
+    return array(
+        // ...
+        new Webmil\LanguageDetectBundle\WebmilLanguageDetectBundle(),
+        // ...
+    );
+}
+```
 
 Configuration example
 ---------------------
@@ -50,7 +54,7 @@ In controller:
 
 ``` php
 <?php
-
+// ...
 $ld = $this->container->get('language.detect'); //or just $this->get('language.detect')
 $text = 'Test language detection.';
 $lang = $ld->detectConfidence($text);
