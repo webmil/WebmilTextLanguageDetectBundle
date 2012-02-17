@@ -1,7 +1,7 @@
 WebmilLanguageDetectBundle
 ==========================
 
-Bundle to use [text-language-detect](https://github.com/webmil/text-language-detect.git) with [Symfony2](https://github.com/symfony/symfony).
+Bundle to use [text-language-detect](https://github.com/webmil/text-language-detect) with [Symfony2](https://github.com/symfony/symfony).
 
 Installation
 ------------
