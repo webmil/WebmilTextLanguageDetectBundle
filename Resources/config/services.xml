@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="text_language_detect.class">TextLanguageDetect\TextLanguageDetect</parameter>
+    </parameters>
+
+    <services>
+        <service id="text.language.detect" class="%text_language_detect.class%">
+            <argument type="collection">
+                <argument key="omit_languages">%webmil.language_detect.omit_languages%</argument>
+            </argument>
+        </service>
+    </services>
+
+</container>
