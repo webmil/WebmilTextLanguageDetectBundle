@@ -33,8 +33,8 @@ Add the WebmilLanguageDetectBundle to your application kernel:
         );
     }
 
-Configuration
--------------
+Configuration example
+---------------------
 Add in your config.yml file:
 
     // app/config/config.yml
