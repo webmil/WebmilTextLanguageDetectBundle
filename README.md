@@ -44,8 +44,8 @@ webmil_language_detect:
         include_only: true                              # if true will include (rather than exclude) only those in the list
 ```
 
-Usage example
--------------
+Usage
+-----
 In controller:
 
 ``` php
