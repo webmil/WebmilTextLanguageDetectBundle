@@ -33,6 +33,15 @@ Add the WebmilLanguageDetectBundle to your application kernel:
         );
     }
 
+Configuration
+-------------
+Add in your config.yml file:
+    // app/config/config.yml
+    webmil_language_detect:
+        omit_languages:       # Omits languages. If you're only expecting a limited set of languages, this can greatly
+            omit_list: ['russian', 'english', 'ukrainian']  # language name or array of names to omit
+            include_only: true                              # if true will include (rather than exclude) only those in the list
+
 Usage example
 -------------
 In controller:
