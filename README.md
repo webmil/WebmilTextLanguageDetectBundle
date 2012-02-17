@@ -71,7 +71,7 @@ In controller:
 ``` php
 <?php
 // ...
-$ld = $this->container->get('language.detect'); //or just $this->get('language.detect')
+$ld = $this->container->get('text.language.detect'); //or just $this->get('language.detect')
 $text = 'Test language detection.';
 $lang = $ld->detectConfidence($text);
 //...
