@@ -48,11 +48,12 @@ Usage example
 -------------
 In controller:
 
-```php
+``` php
 $ld = $this->container->get('language.detect'); \\or just $this->get('language.detect')
 $text = 'Test language detection.';
 $lang = $ld->detectConfidence($text);
 ```
+
 print_r($lang):
 
     // output
