@@ -15,6 +15,7 @@ Add both to your autoload:
 
 ``` php
 // app/autoload.php
+<?php
 $loader->registerNamespaces(array(
     // ...
     'Webmil'               => __DIR__.'/../vendor/bundles',
@@ -27,6 +28,7 @@ Add the WebmilLanguageDetectBundle to your application kernel:
 
 ``` php
 // app/AppKernel.php
+<?php
 public function registerBundles()
 {
     return array(
@@ -58,6 +60,7 @@ In controller:
 $ld = $this->container->get('language.detect'); //or just $this->get('language.detect')
 $text = 'Test language detection.';
 $lang = $ld->detectConfidence($text);
+//...
 ```
 
 print_r($lang):
