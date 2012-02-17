@@ -11,7 +11,7 @@ Add text-language-detect and WebmilLanguageDetectBundle to your vendors:
     git submodule add https://github.com/webmil/text-language-detect.git vendor/text-language-detect
     git submodule add https://github.com/webmil/WebmilLanguageDetectBundle.git vendor/bundles/Webmil/LanguageDetectBundle
 
-Or Add the followings lines to your `deps` file
+Or add the followings lines to your `deps` file
 
     // deps
     [WebmilLanguageDetectBundle]
