@@ -1,0 +1,26 @@
+{
+    "name": "webmil/text-language-detect-bundle",
+    "description": "Bundle to use Text_LanguageDetect with Symfony2.",
+    "keywords": ["language detect","text language detect"],
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Webmil",
+            "email": "info@webmil.com.ua",
+            "homepage": "http://www.webmil.com.ua/"
+        },
+        {
+			"name": "Oleh",
+			"email": "superdodman@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "2.*",
+        "text-language-detect/text-language-detect": "master-dev"
+    },
+    "autoload": {
+        "psr-0": { "Webmil\\TextLanguageDetectBundle": "" }
+    },
+    "target-dir": "Webmil/TextLanguageDetectBundle"
+}
