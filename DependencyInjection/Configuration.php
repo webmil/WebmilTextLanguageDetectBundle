@@ -1,12 +1,12 @@
 <?php
 
-namespace Webmil\LanguageDetectBundle\DependencyInjection;
+namespace Webmil\TextLanguageDetectBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 /**
- * Configuration for WebmilLanguageDetectBundle
+ * Configuration for WebmilTextLanguageDetectBundle
  */
 class Configuration implements ConfigurationInterface
 {
@@ -20,7 +20,7 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder();
 
-        $root = $treeBuilder->root('webmil_language_detect');
+        $root = $treeBuilder->root('webmil_text_language_detect');
 
         $root
             ->children()

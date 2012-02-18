@@ -1,4 +1,4 @@
-WebmilLanguageDetectBundle
+WebmilTextLanguageDetectBundle
 ==========================
 
 Bundle to use [text-language-detect](https://github.com/webmil/text-language-detect) with [Symfony2](https://github.com/symfony/symfony).
@@ -6,17 +6,17 @@ Bundle to use [text-language-detect](https://github.com/webmil/text-language-det
 Installation
 ------------
 
-Add text-language-detect and WebmilLanguageDetectBundle to your vendors:
+Add text-language-detect and WebmilTextLanguageDetectBundle to your vendors:
 
     git submodule add https://github.com/webmil/text-language-detect.git vendor/text-language-detect
-    git submodule add https://github.com/webmil/WebmilLanguageDetectBundle.git vendor/bundles/Webmil/LanguageDetectBundle
+    git submodule add https://github.com/webmil/WebmilTextLanguageDetectBundle.git vendor/bundles/Webmil/TextLanguageDetectBundle
 
 Or add the followings lines to your `deps` file
 
     // deps
-    [WebmilLanguageDetectBundle]
-        git=git://github.com/webmil/WebmilLanguageDetectBundle.git
-        target=bundles/Webmil/LanguageDetectBundle
+    [WebmilTextLanguageDetectBundle]
+        git=git://github.com/webmil/WebmilTextLanguageDetectBundle.git
+        target=bundles/Webmil/TextLanguageDetectBundle
 
     [text-language-detect]
         git=git://github.com/webmil/text-language-detect.git
@@ -38,7 +38,7 @@ $loader->registerNamespaces(array(
 ));
 ```
 
-Add the WebmilLanguageDetectBundle to your application kernel:
+Add the WebmilTextLanguageDetectBundle to your application kernel:
 
 ``` php
 // app/AppKernel.php
@@ -47,7 +47,7 @@ public function registerBundles()
 {
     return array(
         // ...
-        new Webmil\LanguageDetectBundle\WebmilLanguageDetectBundle(),
+        new Webmil\TextLanguageDetectBundle\WebmilTextLanguageDetectBundle(),
         // ...
     );
 }
@@ -58,7 +58,7 @@ Configuration example
 Add in your config.yml file:
 
 ``` yaml
-webmil_language_detect:
+webmil_text_language_detect:
     omit_languages:       # Omits languages. If you're only expecting a limited set of languages, this can greatly
         omit_list: ['russian', 'english', 'ukrainian']  # language name or array of names to omit
         include_only: true                              # if true will include (rather than exclude) only those in the list
