@@ -17,7 +17,7 @@
     ],
     "require": {
         "symfony/framework-bundle": "2.*",
-        "text-language-detect/text-language-detect": "master-dev"
+        "webmil/text-language-detect": "master-dev"
     },
     "autoload": {
         "psr-0": { "Webmil\\TextLanguageDetectBundle": "" }
