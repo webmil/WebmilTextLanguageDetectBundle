@@ -87,6 +87,12 @@ print_r($lang):
         [confidence] => 0.018985507246377
     )
 
+License
+-------
+
+Bundle is licensed under the MIT License. See the LICENSE file for full
+details.
+
 Author
 ------
 [Webmil](http://www.webmil.com.ua/)
