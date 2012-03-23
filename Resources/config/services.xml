@@ -6,6 +6,8 @@
 
     <parameters>
         <parameter key="text_language_detect.class">TextLanguageDetect\TextLanguageDetect</parameter>
+
+        <parameter key="modified_text_language_detect.class">Webmil\TextLanguageDetectBundle\Lib\WebmilModifiedTextLanguageDetect</parameter>
     </parameters>
 
     <services>
@@ -14,6 +16,16 @@
                 <argument key="omit_languages">%webmil.text_language_detect.omit_languages%</argument>
             </argument>
         </service>
+
+        <service id="text.language.detect.clean" class="%text_language_detect.class%"></service>
+
+        <service id="modified.text.language.detect" class="%modified_text_language_detect.class%">
+            <argument type="service" id="text.language.detect.clean" />
+            <argument type="collection">
+                <argument key="omit_languages">%webmil.text_language_detect.omit_languages%</argument>
+            </argument>
+        </service>
     </services>
+
 
 </container>
